@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-import * as constants from './constants';
-import * as errors from './errors';
-import * as multiWrite from './multi-write';
-import * as scanner from './scanner';
-import * as sourceDestination from './source-destination';
-import { streamPreloadingAssets } from './dotetch-preloading';
-import * as sparseStream from './sparse-stream';
-import * as tmp from './tmp';
-import * as utils from './utils';
+import * as constants from "./constants";
+import * as errors from "./errors";
+import * as multiWrite from "./multi-write";
+import * as scanner from "./scanner";
+import * as sourceDestination from "./source-destination";
+import * as dotEtch from "./dotetch";
+import * as sparseStream from "./sparse-stream";
+import * as tmp from "./tmp";
+import * as utils from "./utils";
 
 export {
 	constants,
@@ -33,5 +33,5 @@ export {
 	sparseStream,
 	tmp,
 	utils,
-	streamPreloadingAssets,
+	dotEtch,
 };
