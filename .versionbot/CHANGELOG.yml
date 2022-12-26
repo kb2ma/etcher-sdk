@@ -1,4 +1,23 @@
 - commits:
+    - subject: "Patch: Splitting .etch generation (etcher-sdk) and prelaoding
+        (balena-img)"
+      hash: 5f8c87d72a102991ccd19354a39bc5ef7b526cc6
+      body: ""
+      footer: {}
+      author: Edwin Joassart
+      nested: []
+    - subject: first working draft of .etch / preloading lib w/ forked gunzip-maybe
+        and @types/gunzip-maybe so we don't need esinterop
+      hash: 534f8f81cc818ebcf65566191e2412653978df3b
+      body: ""
+      footer:
+        change-type: minor
+      author: Edwin Joassart
+      nested: []
+  version: 7.5.0
+  title: ""
+  date: 2022-12-26T16:38:37.009Z
+- commits:
     - subject: update drivelist and node-raspberypi-usbboot dependencies
       hash: 838399bae7f2d76674c8f76957cafa8875a75d9e
       body: ""
