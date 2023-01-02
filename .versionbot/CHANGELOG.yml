@@ -1,4 +1,19 @@
 - commits:
+    - subject: "chore(deps): update dependency typedoc to 0.23.23"
+      hash: 365c340a8e310199873909d84b183e59a4008145
+      body: |
+        Update typedoc to 0.23.23
+
+        Update typedoc from 0.17.8 to 0.23.23
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 7.4.7
+  title: ""
+  date: 2023-01-02T16:49:14.444Z
+- commits:
     - subject: "patch: version bump npm release"
       hash: 3ae1b3e8db454d4eb8f8e9edec7f6de6e0928e77
       body: ""
