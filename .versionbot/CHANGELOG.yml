@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update dependencies
+      hash: b6b28fa83d619c5c1b4fa07f0ee9dc5702bec6ea
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: ab77
+      nested: []
+  version: 7.5.0
+  title: ""
+  date: 2023-01-05T23:11:53.983Z
+- commits:
     - subject: "patch: version bump npm release"
       hash: 3ae1b3e8db454d4eb8f8e9edec7f6de6e0928e77
       body: ""
