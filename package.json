@@ -63,7 +63,7 @@
     "gzip-stream": "^1.1.2",
     "lzma-native": "^8.0.6",
     "mountutils": "^1.3.20",
-    "node-raspberrypi-usbboot": "^1.0.4",
+    "node-raspberrypi-usbboot": "^1.0.5-build-mcraa-win-cm4-9fef1aa279b71ca9d7e6945a51b65e7e049757ac-1",
     "outdent": "^0.8.0",
     "partitioninfo": "^6.0.2",
     "rwmutex": "^1.0.0",
