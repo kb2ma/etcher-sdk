@@ -1,4 +1,20 @@
 - commits:
+    - subject: "patch: fixed winusb-driver version"
+      hash: ce5567e080b6cd0553641a28b8062c1b597905f3
+      body: ""
+      footer: {}
+      author: Peter Makra
+      nested: []
+    - subject: "patch: update usbboot second stage check"
+      hash: 7920fa317f2dcde0c95376b061db6ba7f3845928
+      body: ""
+      footer: {}
+      author: Peter Makra
+      nested: []
+  version: 7.4.7
+  title: ""
+  date: 2023-01-10T13:53:38.746Z
+- commits:
     - subject: "patch: version bump npm release"
       hash: 3ae1b3e8db454d4eb8f8e9edec7f6de6e0928e77
       body: ""
