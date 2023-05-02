@@ -1,6 +1,6 @@
 {
   "name": "@kb2ma/etcher-sdk",
-  "version": "8.5.3",
+  "version": "8.5.4",
   "description": "Etcher SDK -- kb2ma dev",
   "author": "Balena Ltd <hello@balena.io>",
   "main": "build/index.js",
