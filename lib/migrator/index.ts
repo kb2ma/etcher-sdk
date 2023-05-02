@@ -38,6 +38,11 @@ function formatMB(bytes: number): string {
 	return (bytes / (1024 * 1024)).toFixed(2)
 }
 
+/** Options for migrate(). We expect this may be a growing/varied list. */
+export interface MigrateOptions {
+	rebootMode: string
+}
+
 /**
  * @summary Sets up a UEFI based computer running Windows to switch to balenaOS, and then reboots to execute the switch.
  * !!! WARNING !!! Running this function will OVERWRITE AND DESTROY the operating system running on this computer.
@@ -46,13 +51,15 @@ function formatMB(bytes: number): string {
  * @param {string} windowsPartition - partition label of the device where we want to add the new data; defauls to "C"
  * @param {string} deviceName - storage device name, default: '\\.\PhysicalDrive0'
  * @param {string} efiLabel - label to use when mounting the EFI partition, in case the default "M" is already in use
+ * @param {MigrateOptions} options - various options to qualify how migrate runs
  * @returns
  */
 export const migrate = async (
 	imagePath: string,
 	windowsPartition: string = 'C',
 	deviceName: string = '\\\\.\\PhysicalDrive0',
-	efiLabel: string = 'M'
+	efiLabel: string = 'M',
+	options: MigrateOptions = { rebootMode: 'default'}
 ) => {
 	console.log(`Migrate ${deviceName} with image ${imagePath}`);
 	try {
@@ -142,8 +149,13 @@ export const migrate = async (
 		console.log("Boot file set.", setBootResult)
 
 		// reboot
-		console.log("Migration complete, about to reboot");
-		winCommands.shutdown.reboot(REBOOT_DELAY_SEC);
+		console.log("Migration setup complete");
+		if (options.rebootMode == 'no-reboot') {
+			console.log("Ready for manual reboot");
+		} else {
+			console.log("Schedule reboot in ${REBOOT_DELAY_SEC} sec}");
+			winCommands.shutdown.reboot(REBOOT_DELAY_SEC);
+		}
 
 	} catch (error) {
 		console.log("Can't proceed with migration:", error);
